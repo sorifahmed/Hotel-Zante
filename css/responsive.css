@@ -1,0 +1,30 @@
+@media only screen and (max-width: 780px){
+	.icon-box{
+		display: none;
+	}
+	.text-box{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 576px){
+ 
+.chack-box{
+	margin-top: -79px;
+	margin-bottom: 30px;
+}
+
+
+}
+@media only screen and (max-width: 767px){
+.rooms-title{
+	text-align: center;
+}
+
+
+
+}
+
+
+
+

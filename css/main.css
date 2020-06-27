@@ -1,0 +1,2072 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+ 
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*===================  Header-top-menu  ====================*/
+.header-wrapper {
+    background: #6D586F;
+    padding: 5px 9px;
+}
+a.navbar-brand img {
+    width: 80%;
+}
+ul.navbar-nav a {
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 9px 14px;
+    transition: 0.2s;
+    outline: none;
+    font-size: 13px;
+}
+span.menu-button a i {
+    margin-right: 5px;
+}
+ul.navbar-nav li {
+    margin-right: 35px;
+}
+.menu-button{
+  margin-right: 0px !important;
+}
+.menu-button :hover{
+     background: #fff;
+}
+ul.navbar-nav a:hover{
+  color:#D0AB67 !important;
+}
+.dropdown-menu.show a {
+    color: #635a5a !important;
+    background: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: auto;
+}
+.dropdown-menu.show {
+    margin-top: 11px;
+    border-radius: 0;
+}
+span.menu-button {
+    background: #D0AB67;
+    border-radius: 5px;
+    width: 139px;
+    margin: 0 auto;
+    display: inline-block;
+     outline: none;
+}
+span .menu-button-checked{
+  outline: none;
+}
+/*===================  Chack in and chack out  =================*/
+input {
+  padding:10px;
+  font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  border-radius: 0 !important;
+}
+
+.form-control {
+  border-radius: 0 !important;
+  font-size: 12x;
+}
+
+/*===================  Header-slider  ====================*/
+.Header-slider {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    filter: hue-rotate(45deg);
+}
+.header-left {
+    padding: 125px 0px;
+}
+.header-left h2 {
+    margin: 0;
+    color: #000;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 39px;
+}
+.header-left i {
+    color: #DEB666;
+    padding: 20px 4px;
+}
+.header-left span {
+    color: #000;
+    font-size: 21px;
+    font-family: auto;
+}
+.header-left p {
+    background: url(https://2.bp.blogspot.com/-iAodUTDjUEM/WSVRcUTAy2I/AAAAAAAAHs8/LmoUPy--YowHeot-4hIsXgeYpu5wAVY0wCLcB/s1600/guilde-img-thik.png) no-repeat scroll 0 6px;
+    padding: 8px 31px;
+    color: #000;
+    font-size: 12px;
+    margin: 0;
+}
+.chack-box {
+    margin-top: 79px;
+    background: #fff;
+    padding: 42px 23px;
+    border-radius: 8px;
+}
+.chack-box h2 {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    font-family: auto;
+    margin: 0;
+    text-align: center;
+}
+input.btn.btn-primary {
+    border-radius: 2px !important;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+    margin: 0;
+    padding-left: 6px;
+}
+input#dp1 {
+    border-radius: 4px !important;
+    font-size: 13px;
+    color: #000;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+input#dp2{
+    border-radius: 4px !important;
+    font-size: 13px;
+    color: #000;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+.icon-box {
+    display: inline;
+}
+.text-box {
+    display: inline-block;
+    margin-top: -13px;
+    background: #fff;
+    margin-bottom: 35px;
+    padding: 4px 17px;
+    margin-right: 26px;
+    border-radius: 0px 4px 5px 0px;
+}
+.text-box h6 {
+    margin: 0;
+    font-size: 13px;
+    padding-top: 3px;
+    color: #000;
+}
+.text-box span {
+    color: #000;
+    font-size: 9px;
+    margin: 0;
+}
+.icon-box {
+    background: #000;
+    color: #fff;
+    padding: 14px 13px;
+    border-radius: 3px 0px 0px 4px;
+    margin-left: 20px;
+}
+.icon-box i {
+    font-size: 22px;
+}
+/*===================  Our-Rooms  ====================*/
+.Rooms-section {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.room-title.text-center {
+    margin-bottom: 60px;
+}
+.room-title.text-center h2 {
+    color: #AAA;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: monospace;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.room-title.text-center p {
+    color: #999;
+    font-size: 17px;
+    font-family: monospace;
+    margin: 0;
+}
+.same-room {
+    margin-bottom: 30px;
+}
+.same-wrp {
+    border: 1px solid #EEE;
+    padding-bottom: 7px;
+     position: relative;
+}
+.same-wrp h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    font-weight: bold;
+    padding: 10px 0px;
+    cursor: pointer;
+    font-family: auto;
+}
+.same-wrp:hover h3{
+  display: none;
+}
+.social {
+    margin-top: 11px;
+}
+.same-wrp i {
+    display: none;
+    padding: 12px 8px;
+    font-size: 15px;
+    text-align: center;
+    transition: 0.8s;
+    margin-left: 30px;
+    color: #000;
+    border: 1px dashed #ddd;
+    cursor: pointer;
+    transition: 0.9s;
+}
+.same-wrp:hover i{
+  display: inline-block;
+}
+.same-wrp img {
+    width: 100%;
+    cursor: pointer;
+   transition-delay: 0.2s;
+}
+.price {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    color: #fff;
+    padding: 1px 12px;
+    border-radius: 3px;
+    background: #583838;
+}
+/*======================== Our-Services ====================*/
+.Our-Services{
+  padding: 100px 0px;
+  background: #F1F0ED;
+}
+.services-title.text-center {
+    margin-bottom: 65px;
+}
+.services-title.text-center h2 {
+    color: #000;
+    font-size: 31px;
+    font-weight: bold;
+    font-family: monospace;
+    margin: 0;
+    padding-bottom: 7px;
+}
+.tab-content {
+    margin-bottom: 46px;
+}
+.services-title.text-center p {
+    font-size: 14px;
+    font-family: monospace;
+    margin: 0;
+}
+div#nav-home img {
+    width: 100%;
+    background: #fff;
+    padding: 4px;
+    border: 1px solid #ddd;
+}
+div#buzz img{
+    width: 100%;
+    background: #fff;
+    padding: 4px;
+    border: 1px solid #ddd;
+}
+div#references img{
+    width: 100%;
+    background: #fff;
+    padding: 4px;
+    border: 1px solid #ddd;
+}
+div#Health img{
+  width: 100%;
+    background: #fff;
+    padding: 4px;
+    border: 1px solid #ddd;
+}
+ul.list.nav.nav-tabs.nav.flex-column.ml-auto li a {
+    background: #fff;
+    padding: 38px 10px;
+    color: #000;
+    font-family: serif;
+    font-size: 17px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff !important;
+    background-color: #000 !important;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+ul.list.nav.nav-tabs.nav.flex-column.ml-auto li {
+    margin-bottom: 17px;
+}
+ul.list.nav.nav-tabs.nav.flex-column.ml-auto {
+    border: none;
+}
+i.icon img {
+    width: 29px;
+    margin-right: 8px;
+}
+.same-button {
+    margin-top: -30px;
+}
+.same-button  p {
+    display: inline;
+    font-size: 13px;
+    display: block;
+    padding-left: 43px;
+    margin: 0;
+}
+.same-button h4 {
+    display: inline;
+    margin: 0;
+    font-size: 15px;
+    color: #ff3131;
+}
+.same-button i.icon {
+    display: inline-block;
+}
+/*====================== OUR GUESTS LOVE US=======================*/
+section.our-guests.text-center {
+    background: #F5F5F5;
+    padding: 100px 0px;
+}
+.guests {
+    margin-bottom: 50px;
+}
+.guests-title {
+    margin-bottom: 50px;
+}
+.guests-title h2 {
+    color: #000;
+    font-weight: bold;
+    font-family: monospace;
+    margin: 0;
+    font-size: 34px;
+    padding-bottom: 5px;
+}
+.guests-title p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: monospace;
+    padding-bottom: 12px;
+}
+.guests-comm {
+    border: 1px solid #ddd;
+    padding: 33px 6px;
+    border-radius: 3px;
+    position: relative;
+    background: #f7f7f7;
+    transition: 0.7s;
+}
+.guests:hover .guests-comm{
+    background: #fff;
+    box-shadow: 1px 1px 12px 2px #ddd;
+    transform: translate(0px, -13px);
+}
+.guests:hover .guests-comm:after{
+    background: #fff !important;
+}
+.guests-comm:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -9px;
+    left: 152px;
+    width: 20px;
+    height: 18px;
+    transition: 0.7s;
+    background: #f7f6f6 !important;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    transform: rotate(42deg);
+    background: #fff;
+}
+.guests-comm h3 {
+    margin: 0;
+    color: #AAA;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: initial;
+    padding-bottom: 10px;
+}
+.guests-comm i {
+    color: #DEB666;
+    padding: 0px 4px;
+}
+.guests-comm p {
+    margin: 0;
+    font-size: 13px;
+    color: #777;
+    font-weight: bold;
+    font-family: auto;
+    padding: 19px 1px;
+}
+.guests-profile {
+    margin-top: 41px;
+    margin-right: 37px;
+}
+.guests-profile img {
+    border-radius: 50%;
+    margin-top: -19px;
+}.guests-profile img {
+    border-radius: 50%;
+}
+.guests-profile p {
+    display: inline-block;
+    padding: 0px 1px;
+    margin: 0;
+    color: #777;
+    font-family: auto;
+}
+.guests-profile span {
+    display: block;
+    margin-left: -3px;
+    font-size: 12px;
+}
+/*======================== news-section ========================*/
+ .news-section{
+  padding: 100px 0px;
+ }
+ .new-heading.text-center {
+    margin-bottom: 54px;
+}
+.new-heading.text-center h2 {
+    margin: 0;
+    font-size: 29px;
+    color: #000;
+    font-family: monospace;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.new-heading.text-center p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+.news {
+    position: relative;
+    margin-bottom: 30px;
+    overflow:hidden;
+    
+}
+.news img {
+    width: 100%;
+    height: 305px;
+    border-radius: 4px;
+    transition: transform .9s;
+    transform: scale(1.0);
+}
+.news:hover img {
+    transform: translate3d(3%,0,0)scale(1.2);
+}
+.news-title {
+    position: absolute;
+    bottom: 37px;
+    left: 28px;
+}
+.news-title p {
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: initial;
+}
+.news-title h4 {
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: initial;
+}
+.btn-container.text-center {
+    margin-top: 24px;
+}
+.btn-container.text-center p {
+    display: inline;
+    color: #999;
+    font-size: 17px;
+    font-family: auto;
+    margin: 0;
+    padding: 0px 10px;
+} 
+.btn-container.text-center button {
+    background: none;
+    border: none;
+    color: #DEB666;
+}
+.btn-container.text-center button:hover {
+    background: #DEB666;
+    color: #fff;
+}
+.btn-container.text-center button:hover i {
+     background: #fff !important;
+     color:#DEB666 !important;
+}
+.btn-container.text-center i {
+    font-size: 12px;
+    background: #DEB666;
+    width: 19px;
+    border-radius: 50px;
+    color: #fff;
+    height: 20px;
+    padding: 4px 0px;
+}
+/*======================== subcribe-section ========================*/
+section.subcribe-section {
+    background-image: url(../img/newsletter-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    filter: url();
+}
+.subcribe-title.text-center {
+    padding: 120px 0px;
+    position: relative;
+}
+.subcribe-title.text-center h1 {
+    color: red;
+    font-size: 32px;
+    font-family: auto;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 7px;
+}
+.subcribe-title.text-center p {
+    margin: 0;
+    font-size: 15px;
+    font-family: auto;
+    padding-bottom: 31px;
+    color: #000;
+}
+.subcribe-title.text-center input.form-control {
+    max-width: 534px;
+    margin: 0 auto;
+    border-radius: 73px !important;
+    padding: 21px 20px;
+    font-size: 11px;
+    font-family: auto;
+    margin-bottom: 12px;
+    color: #fff;
+}
+section.subcribe-section button {
+    position: absolute;
+    top: 225px;
+    font-size: 12px;
+    right: 203px;
+    border-radius: 50px;
+    width: 30px;
+    border: none;
+    height: 30px;
+    color: #fff;
+    background: #DEB666;
+}
+.form-check-label {
+    font-size: 12px;
+    font-family: auto;
+    color: #000;
+}
+/*======================== footer-section ========================*/
+.footer-section {
+    padding-top: 100px;
+    border-top: 1px solid #EEE;
+}
+.same-footer {
+    margin-bottom: 79px;
+}
+.same-footer img {
+    max-width: 100%;
+    margin-bottom: 21px;
+}
+.same-footer p {
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+}
+.same-footer h3,.footer-wrapper h3 {
+    color: #000;
+    font-size: 18px;
+    font-family: auto;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 8px;
+    padding-left: 23px;
+}
+.same-footer h3:before{
+    background: #deb666;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    content: "\f105";
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: .6em;
+    line-height: 1.7em;
+    vertical-align: middle;
+    text-align: center;
+    top: 1px;
+    position: absolute;
+    left: 15px;
+}
+.footer-wrapper h3:before{
+    background: #deb666;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    content: "\f105";
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: .6em;
+    line-height: 1.7em;
+    vertical-align: middle;
+    text-align: center;
+    top: 1px;
+    position: absolute;
+    left: 15px;
+}
+.same-footer ul{
+    margin:0;
+    padding:0;
+}
+.same-footer li {
+    list-style: none;
+     padding: 5px 0px
+}
+.same-footer ul li a {
+    font-size: 14px;
+    color: #000;
+    font-family: -webkit-body;
+    text-decoration: none;
+}
+.same-footer ul li a:hover{
+  color:#DEB666 !important;
+}
+.same-footer ul li a:before {
+    content: "\f0da";
+    font-family: FontAwesome;
+    color: #BBB;
+    padding: 0px 4px;
+}
+.footer-wrapper span {
+    display: block;
+    color: #000;
+    padding: 6px 0px;
+    font-size: 12px;
+}
+.footer-wrapper i {
+    color: #666;
+    margin-right: 4px;
+}
+.social-footer{
+  margin-top: 16px;
+}
+.social-footer a {
+    margin-right: 11px;
+}
+.social-footer i {
+    color: #000;
+    border: 1px solid #ddd;
+    width: 45px;
+    height: 45px;
+    padding: 10px 14px;
+    font-size: 24px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.social-footer i:hover{
+  background: #DEB666;
+  color:#fff;
+}
+/*========================  Copyright ========================*/
+section.coryright.text-center p {
+    font-size: 12px;
+}
+
+/*===================  rooms-section Header-top   ====================*/
+header.rooms-wrapper.sticky-top {
+    margin-top: 6px;
+    background: #fff;
+    border-bottom: 1px solid #CCC;
+}
+section.Header-top {
+    border-bottom: 1px solid #EEE;
+}
+.top-left p {
+    margin: 0;
+    font-size: 13px;
+    padding: 5px 15px;
+    color: #888;
+    font-family: auto;
+}
+.top-right.pull-right span {
+    color: #999;
+    font-size: 14px;
+    font-family: auto;
+}
+.top-right.pull-right i {
+    color: #BBB;
+    font-size: 15px;
+}
+.top-contact {
+    display: inline;
+    margin-left: 25px;
+}
+.number {
+    display: inline;
+}
+/*===================  rooms-wrapper  ====================*/
+header.rooms-wrapper ul li a {
+    color: #000 !important;
+}
+/*================  rooms-wrapper-page-title ===============*/
+.rooms-page-title {
+    background-image: url(../img/9-1-480x480.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 181px;
+}
+.page-title {
+    padding: 50px 0px;
+}
+.page-title h2 {
+    color: #fff;
+    font-family: auto;
+    font-weight: bold;
+}
+.page-title a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: auto;
+}
+.page-title span {
+    color: #fff;
+    font-family: auto;
+    font-size: 16px;
+}
+
+/*===========================  rooms-list ==========================*/
+.rooms-list{
+    padding: 100px 0px;
+}
+.rooms-list-item {
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+.rooms-wrap{
+    overflow: hidden;
+}
+.rooms-wrap img {
+    max-width: 100%;
+    transition: transform .3s;
+    transform: scale(1.06);
+}
+.rooms-wrap img:hover{
+    transform: translate3d(3%,0,0) scale(1.06);
+}
+.rooms-title {
+    padding-top: 40px;
+}
+.rooms-title h2 {
+    margin: 0;
+    font-size: 22px;
+    font-family: inherit;
+    color: #000;
+    padding-bottom: 12px;
+}
+.rooms-title a{
+     text-decoration: none;
+}
+.rooms-title p {
+    margin: 0;
+    font-size: 17px;
+    color: #858A99;
+    font-family: auto;
+    padding-bottom: 32px;
+}
+.rooms-title i {
+    color: #AAA;
+    width: 36px;
+    height: 36px;
+    border: 1px dashed #EEE;
+    padding: 10px 0px;
+    cursor: pointer;
+    font: normal normal normal 14px/1 FontAwesome;
+    margin-right: 12px;
+}
+.rooms-title i:hover {
+    background: #ddd;
+    color:#000;
+}
+.rooms-title button {
+    background: none;
+    border: none;
+}
+.rooms-title button:hover {
+     background:none;
+}
+.rooms-price {
+    padding: 60px 27px;
+}
+.rooms-price p {
+    margin: 0;
+    font-size: 23px;
+    color: #000;
+}
+.rooms-price.text-center span {
+    color: #BBB;
+    font-size: 17px;
+    font-family: auto;
+}
+.rooms-price button {
+    background: none;
+    border: none;
+    color: #DEB666;
+    margin-top: 23px;
+}
+.rooms-price button:hover {
+    background: #DEB666;
+    color: #fff;
+}
+.rooms-price button:hover i {
+     background: #fff !important;
+     color:#DEB666 !important;
+}
+.rooms-price i {
+    font-size: 12px;
+    background: #DEB666;
+    width: 19px;
+    border-radius: 50px;
+    color: #fff;
+    height: 20px;
+    padding: 4px 0px;
+}
+/*====================== Family-Rooms ==========================*/
+.Family-Rooms {
+    background-image: url(../img/room7.jpg);
+    background-attachment: fixed;
+    height: 181px;
+    filter: inherit;
+}
+.family-slider {
+    border: 1px solid #ddd;
+}
+.page-title h2 {
+    color: #fff;
+    font-family: auto;
+    margin: 0;
+    padding: 13px 0px;
+    font-size: 36px;
+    font-weight: bold;
+}
+.family-price.pull-right p {
+    padding-top: 45px;
+    color: #fff;
+    font-size: 44px;
+}
+.family-price.pull-right span {
+    font-size: 14px;
+    font-family: monospace;
+}
+/*======================  Family-Section  ==========================*/
+section.family-section {
+    padding: 100px 0px;
+}
+
+.Book-now {
+    border: 1px solid #ddd;
+}
+.chack-box-2{
+      background: #fff;
+    padding: 42px 23px;
+    border-radius: 8px;
+}
+.chack-box-2 h2 {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    font-family: auto;
+    margin: 0;
+    text-align: center;
+}
+.sidebar-pht {
+    background-image: url(../img/sidebar.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin-top: 20px;
+    height: 346px;
+}
+/*====================== Family-Rooms-info  ========================*/
+.Family-Rooms-info.text-center {
+    border: 1px solid #ddd;
+    margin-bottom: 24px;
+    width: 100%;
+    margin-top: 29px;
+}
+.item {
+    width: 25%;
+    border-right: 1px dashed #ddd;
+    padding-top: 16px;
+    padding-bottom: 22px;
+    float: left;
+}
+.item:last-child{
+     border-right: none;
+}
+.item i {
+    font-size: 28px;
+    color: #AAA;
+
+}
+.item p {
+    margin: 0;
+    color: #777;
+    font-size: 15px;
+    padding: 0px 17px;
+}
+/*====================== rooms-content ========================*/
+.rooms-content p {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 32px;
+    color: #777;
+    font-family: auto;
+}
+.list-menu ul {
+    margin-left: 18px;
+}
+.list-menu li {
+    color: #888;
+    padding: 5px 0px;
+    font-size: 14px;
+}
+/*=======================   Calendar  ==============================*/
+/* Overall wrapper */
+.monthly {
+    background: #F3F3F5;
+    color: #545454;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+}
+
+/* Top bar containing title, navigation, and buttons */
+.monthly-header {
+    position: relative;
+    text-align: center;
+    padding: 0.5em;
+    background: #fff;
+    height: 3em;
+    box-sizing: border-box;
+}
+/* Center area of top bar containing title and buttons */
+.monthly-header-title {
+    text-transform: uppercase;
+}
+
+/* Buttons for reverting to "today", and closing event list */
+.monthly-header-title a:link,
+.monthly-header-title a:visited {
+    display: inline-block;
+    border: 1px solid #ccc;
+    color: #545454;
+    text-decoration: none;
+    height: 1.75em;
+    line-height: 1.65em;
+    padding: 0 0.65em 0 0.65em;
+    box-sizing: border-box;
+    transition: background .1s;
+}
+/* Add some roundy-ness */
+.monthly-header-title a:first-of-type {
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+.monthly-header-title a:last-of-type {
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+.monthly-header-title a:hover {
+    background: #8b8b8b;
+    border: 1px solid #8b8b8b;
+    color: #fff;
+}
+.monthly-header-title a:active {
+    background: #222;
+    border: 1px solid #222;
+    transition: none;
+}
+/* current month/yr block */
+.monthly-header-title-date,
+.monthly-header-title-date:hover {
+    background: #eee!important;
+    border: 1px solid #ccc!important;
+    color: #545454!important;
+    cursor: default;
+}
+/* Button to reset to current month */
+.monthly-reset {
+    border-left: 0!important;
+}
+.monthly-reset::before {
+    content: '\21BB';
+    margin-right: 0.25em;
+}
+/* Button to return to month view */
+.monthly-cal {
+    border-right: 0!important;
+}
+.monthly-cal::before {
+    content: '\2637';
+    margin-right: 0.25em;
+}
+
+/* wrapper for left/right buttons to make the clickable area bigger */
+.monthly-prev,
+.monthly-next {
+    position: absolute;
+    top: 0;
+    width: 3em;
+    height: 100%;
+    opacity: .5;
+}
+.monthly-prev {
+    left: 0;
+}
+.monthly-next {
+    right: 0;
+}
+.monthly-prev:hover,
+.monthly-next:hover {
+    opacity: 1;
+}
+
+/* Arrows */
+.monthly-prev:after,
+.monthly-next:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-color: #222;
+    width: 0.6em;
+    height: 0.6em;
+    margin: -0.4em 0 0 -0.4em;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+/* Left Arrow */
+.monthly-prev:after{
+    border-width: 0 0 0.2em 0.2em;
+}
+/* Right Arrow */
+.monthly-next:after {
+    border-width: 0.2em 0.2em 0 0;
+}
+
+/* Day of the week headings */
+.monthly-day-title-wrap {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #EBEBEB;
+}
+.monthly-day-title-wrap div {
+    width: 14.28%!important;
+    display: table-cell;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Calendar days wrapper */
+.monthly-day-wrap {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+.monthly-week {
+    display: table-row;
+    width: 100%;
+}
+/* Calendar Days */
+.monthly-day, .monthly-day-blank {
+    width: 14.28%!important;
+    display: table-cell;
+    vertical-align: top;
+    box-sizing: border-box;
+    position: relative;
+    color: inherit;
+    background: #fff;
+    box-shadow: 0 0 0 1px #EBEBEB;
+    -webkit-transition: .25s;
+    transition: .25s;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Trick to make the days' width equal their height */
+.monthly-day:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+    float: left;
+}
+
+/* Hover effect for non event calendar days */
+.monthly-day-wrap > a:hover {
+    background: #A1C2E3;
+}
+
+/* Days that are part of previous or next month */
+.monthly-day-blank {
+    background: #F3F3F5;
+}
+
+/* Event calendar day number styles */
+.monthly-day-event > .monthly-day-number {
+    position: absolute;
+    line-height: 1em;
+    top: 0.2em;
+    left: 0.25em;
+}
+
+/* Non-Event calendar day number styles */
+.monthly-day-pick > .monthly-indicator-wrap {
+    margin: 0;
+}
+
+.monthly-day-pick > .monthly-day-number:before,
+.monthly-day-pick > .monthly-day-number:after {
+    content: '';
+    display: block;
+    padding-top: calc(50% - 0.8em);
+    width: 0;
+    height: 0;
+}
+
+/* Days in the past in "picker" mode */
+.monthly-past-day:after{
+    content: '';
+    width: 150%;
+    height: 2px;
+    -webkit-transform-origin: left top;
+        -ms-transform-origin: left top;
+            transform-origin: left top;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.monthly-past-day:hover {
+    background: #fff!important;
+}
+
+/* Current day style */
+.monthly-today .monthly-day-number {
+    color: #FFF;
+    background: #EA6565;
+    border-radius: 0.75em;
+    top: 0.08em;
+    left: 0.05em;
+    font-size: 0.9em;
+    padding: 0;
+    width: 1.25em;
+    height: 1.25em;
+    line-height: 1.25em;
+    text-align: center;
+}
+.monthly-day-pick.monthly-today .monthly-day-number {
+    padding: 0.15em;
+    margin: calc(50% - 0.7em) auto auto auto;
+    font-size: 1em;
+}
+
+/* Wrapper around events */
+.monthly-indicator-wrap {
+    position: relative;
+    text-align: center;
+    line-height: 0;
+    max-width: 1.5em;
+    margin: 0 auto;
+    padding-top: 1.2em;
+}
+
+/* Event indicator dots */
+.monthly-day .monthly-event-indicator {
+    display: inline-block;
+    margin: 0.05em;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    vertical-align: middle;
+    background: #7BA7CE;
+}
+
+.monthly-day .monthly-event-indicator span {
+    color: transparent;
+}
+
+.monthly-day .monthly-event-indicator:hover {
+    cursor: pointer;
+}
+/* Listing of events under calendar */
+.monthly-event-list {
+    background: rgba(233, 235, 236, 0.9);
+    overflow: auto;
+    position: absolute;
+    top: 2.5em;
+    width: 100%;
+    height: calc(100% - 2.5em);
+    display: none;
+    -webkit-transition: .25s;
+    transition: .25s;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+}
+
+/* Days in Events List */
+.monthly-list-item {
+    position: relative;
+    padding: 0.5em 0.7em 0.25em 4em;
+    display: none;
+    border-top: 1px solid #D6D6D6;
+    text-align: left;
+}
+
+.monthly-list-item:after{
+    padding: 0.4em 1em;
+    display: block;
+    margin-bottom: 0.5em;
+ }
+
+.monthly-event-list .monthly-today .monthly-event-list-date {
+    color: #EA6565;
+}
+
+/* Events in Events List */
+.monthly-event-list .listed-event {
+    display: block;
+    color: #fff;
+    padding: 0.4em 1em;
+    border-radius: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+.monthly-list-item a:link, .monthly-list-item a:visited {
+    text-decoration: none;
+}
+
+.item-has-event {
+    display: block;
+}
+
+.item-has-event:after{
+    display: none!important;
+}
+
+.monthly-event-list-date {
+    width: 4em;
+    position: absolute;
+    left: 0;
+    top: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+.monthly-list-time-start,
+.monthly-list-time-end {
+    font-size: .8em;
+    display: inline-block;
+}
+.monthly-list-time-end:not(:empty):before {
+    content: '\2013';
+    padding: 0 2px;
+}
+
+/* Events List custom webkit scrollbar */
+.monthly-event-list::-webkit-scrollbar {width: 0.75em;}
+
+/* Track */
+.monthly-event-list::-webkit-scrollbar-track {background: none;}
+
+/* Handle */
+.monthly-event-list::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border: 1px solid #E9EBEC;
+    border-radius: 0.5em;
+}
+.monthly-event-list::-webkit-scrollbar-thumb:hover {background: #555;}
+
+/* Language-specific. Default is English. */
+.monthly-reset:after        { content: 'Today'; }
+.monthly-cal:after          { content: 'Month'; }
+.monthly-list-item:after    { content: 'No Events'; }
+
+.monthly-locale-fr .monthly-reset:after     { content: "aujourd'hui"; }
+.monthly-locale-fr .monthly-cal:after       { content: "mois"; }
+.monthly-locale-fr .monthly-list-item:after { content: 'aucun événement'; }
+@media (min-width: 25em) {
+    .monthly-day-event {
+        padding-top: 1.3em;
+    }
+    .monthly-day-event > .monthly-indicator-wrap {
+        width: auto;
+        max-width: none;
+    }
+    .monthly-indicator-wrap {
+        padding: 0;
+    }
+    .monthly-day:before {
+        padding-top: calc(100% - 1.2em);
+    }
+    .monthly-day .monthly-event-indicator {
+        display: block;
+        margin: 0 0 1px 0;
+        width: auto;
+        height: 1.5em;
+        line-height: 1.2em;
+        padding: 0.125em 0 0.1em 0.125em;
+        border-radius: 0;
+        overflow: hidden;
+        background-color: #333;
+        color: #333;
+        text-decoration: none;
+        white-space: nowrap;
+        box-sizing: border-box;
+    }
+    .monthly-day .monthly-event-indicator.monthly-event-continued {
+        box-shadow: -1px 0 0 0;
+    }
+    .monthly-day .monthly-event-indicator span {
+        display: block;
+        width: auto;
+        margin: 0;
+        color: #fff;
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}
+/*===================  rooms-reviews ====================*/
+.section-title h2 {
+    margin: 0;
+    font-size: 19px;
+    color: #000;
+    font-weight: bold;
+    font-family: auto;
+    padding-top: 66px;
+    padding-bottom: 25px;
+}
+.reviews-author {
+    float: left;
+    margin-right: 20px;
+}
+.reviews-author img {
+    width: 100%;
+    border-radius: 10px;
+}
+.reviews-content {
+    position: relative;
+    margin-left: 103px;
+    border: 1px solid #ddd;
+    padding: 24px 12px;
+    border-radius: 0px 4px 4px 0px;
+    border-left: 7px solid #ddd;
+    margin-bottom: 22px;
+}
+.reviews-content:before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    display: block;
+    border-width: 10px 12px 10px 0px;
+    border-style: solid;
+    border-color: transparent #eaeaea;
+    left: -19px;
+    top: 32px;
+}
+.reviews-content i {
+    padding-left: 4px;
+    color: #DEB666;
+    font-size: 13px;
+}
+.review-info {
+    color: #BBB;
+    font-size: 13px;
+    font-family: inherit;
+    padding: 6px 5px;
+}
+.review-text {
+    color: #888;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 3px;
+}
+
+/*=================== Similar-rooms ====================*/
+.similar-rooms {
+    position: relative;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+.similar-item{
+    overflow: hidden;
+}
+.similar-item img {
+    width: 100%;
+    transition: transform .3s;
+    transform: scale(1.5);
+}
+.similar-item img:hover {
+   
+}
+.similar-item img:hover {
+    transform: translate3d(3%,0,0) scale(1.5);
+}
+.room-pirces {
+    position: absolute;
+    top: 16px;
+    left: 11px;
+}
+.room-pirces p {
+    color: #000;
+    font-size: 15px;
+    font-family: auto;
+    background: #fff;
+    padding: 3px 9px;
+    margin:0;
+    border-radius: 4px;
+}
+.similar-title.text-center a {
+   text-decoration: none;
+   color:#000;
+}
+.similar-title.text-center h4 {
+    margin: 0;
+    font-size: 18px;
+    padding: 14px 0px;
+    font-family: auto;
+}
+/*=================== single-rooms ====================*/
+section.single-Rooms {
+    background-image: url(../img/room8.jpg);
+    background-position: center;
+    height: 181px;
+    background-attachment: fixed;
+}
+/*=================== same-rooms-img ====================*/
+.same-rooms-img img {
+    width: 100%;
+}
+/*=================== same-rooms-img ====================*/
+.king-Rooms {
+    background-image: url(../img/room1.jpg);
+    background-size:cover;
+    height: 181px;
+    background-attachment: fixed;
+}
+/*=================== same-rooms-img ====================*/
+.double-Rooms {
+    background-image: url(../img/slider5.jpg);
+    background-position: center;
+    height: 181px;
+    background-attachment: fixed;
+}
+
+/*========================== Blog ======================*/
+.blog-section {
+    padding: 100px 0px;
+}
+.blog-title {
+    background-image: url(../img/2-480x480.jpg);
+    background-size: cover;
+}
+img.same-img {
+    width: 100%;
+}
+.same-blog {
+    background: #F5F3F0;
+    padding: 41px 29px;
+    margin-bottom: 61px;
+}
+.same-blog h2 {
+    margin: 0;
+    padding-bottom: 7px;
+}
+.same-blog a {
+    color: #999;
+    text-decoration: none;
+    font-size: 29px;
+    font-family: auto;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.same-blog span {
+    color: #BBB;
+    font-size: 12px;
+    margin-left: 7px;
+}
+.same-blog p {
+    font-size: 16px;
+    color: #AAA;
+    padding-top: 24px;
+    margin: 0;
+    text-align: justify;
+}
+.blog-item {
+    padding: 41px 29px;
+    margin-bottom: 61px;
+    border-bottom: 1px dashed #CCC;
+}
+.blog-item h2 {
+    margin: 0;
+    padding-bottom: 7px;
+}
+.blog-item a {
+    color: #666;
+    text-decoration: none;
+    font-size: 26px;
+    font-family: auto;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.blog-item span {
+    color: #BBB;
+    font-size: 12px;
+    margin-left: 7px;
+}
+.blog-item p {
+    font-size: 16px;
+    color: #AAA;
+    padding-top: 24px;
+    margin: 0;
+    text-align: justify;
+}
+/*======================= read more  ==========================*/
+ 
+li.page-item {
+    margin-right: 10px;
+}
+li.page-item a {
+    border-radius: 0px !important;
+}
+li.page-item a {
+    border-radius: 0px !important;
+    padding: 10px 17px;
+    color: #000;
+    transition: 0.2s;
+    outline: none;
+}
+.page-link:hover {
+ background:#DEB666 !important;
+     color:#fff !important;
+}
+/*======================= Blgo Sidebar  ==========================*/
+.sidebar-title h4 {
+    margin: 0;
+    padding: 0px 28px;
+    margin-top: -1px;
+    font-size: 18px;
+    color: #777;
+}
+.sidebar-title h4:before {
+    background: #deb666;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    content: "\f105";
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: .6em;
+    line-height: 1.7em;
+    vertical-align: middle;
+    text-align: center;
+    top: 1px;
+    position: absolute;
+    left: 15px;
+}
+input[type="text"] {
+    position: relative;
+    padding: 9px 10px;
+    outline: none;
+}
+.form-group button {
+    position: absolute;
+    top: 48px;
+    right: 15px;
+    background: no-repeat;
+    border: none;
+    font-size: 14px;
+    color: #DEB666;
+    border-left: 1px solid #DEB666;
+}
+.form-group input[type="text"] {
+    position: relative;
+    margin-top: 17px;
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #EEE;
+    border-radius: 2px !important;
+}
+/*======================= categories ==========================*/
+.categories {
+    margin-bottom: 28px;
+}
+.categories-title {
+    margin-bottom: 12px;
+}
+.categories-title h4 {
+    padding: 0px 28px;
+    margin: 0;
+    margin-top: -1px;
+    font-size: 18px;
+    color: #777;
+    position: relative;
+}
+.categories-title h4:before {
+    content: "\f105";
+    background: #DEB666;
+    width: 18px;
+    height: 18px;
+    font-family: FontAwesome;
+    color: #fff;
+    padding: 0px 8px;
+    border-radius: 2px;
+    font-size: .6em;
+    line-height: 1.7em;
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    left: 4px;
+    top: 1px;
+}
+.categories ul {
+    margin: 0;
+    padding: 0;
+}
+.categories ul li {
+    list-style: none;
+    padding: 5px 1px;
+    border-bottom: 1px dashed #EEE;
+}
+.categories ul li a {
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    text-decoration: none;
+}
+.categories ul li a:hover {
+    color:#DEB666;
+}
+.categories span {
+    float: right;
+    background: #DEB666;
+    padding: 0px 11px;
+    border-radius: 8px;
+    color:#fff;
+}
+/*======================= Recent-post ==========================*/
+.recent-post {
+    margin-bottom: 20px;
+    margin-top: 32px;
+}
+.recent-title h4{
+    padding: 0px 28px;
+    margin: 0;
+    margin-top: -1px;
+    font-size: 18px;
+    color: #777;
+    position: relative;
+}
+.recent-title h4:before {
+    content: "\f105";
+    background: #DEB666;
+    width: 18px;
+    height: 18px;
+    font-family: FontAwesome;
+    color: #fff;
+    padding: 0px 8px;
+    border-radius: 2px;
+    font-size: .6em;
+    line-height: 1.7em;
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    left: 4px;
+    top: 1px;
+}
+.recent-img {
+    overflow: hidden;
+}
+.recent-img img {
+    width: 100%;
+    transition: transform .3s;
+    transform: scale(1.5);
+}
+.recent-img:hover img{
+    transform: translate3d(3%,0,0)scale(1.5);
+}
+.details {
+    margin-left: -17px;
+}
+.details h6 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #888;
+    font-family: inherit;
+}
+.details span {
+    color: #999;
+    font-size: 11px;
+}
+/*======================= Contact-Section ==========================*/
+.contact-title{
+    background-image: url(../img/swimming.jpg);
+    background-attachment: fixed;
+    height: 181px;
+    background-size: cover;
+}
+.contact-form {
+    padding: 100px 0px;
+}
+input.form-control {
+    margin-bottom: 32px;
+    border: 1px solid #EEE;
+    border-radius: 2px !important;
+    padding: 23px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: auto;
+    color: #a03030 !important;
+    background: #fbfafa;
+}
+textarea#exampleFormControlTextarea1 {
+    margin-top: 20px;
+    border-radius: 4px !important;
+    padding-bottom: 133px;
+    color: #ddd;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: auto;
+}
+label.form-check-label {
+    padding: 34px 30px;
+    color: #777;
+    font-weight: bold;
+    font-family: auto;
+}
+input.form-check-input {
+    margin-left: 6px;
+    margin-top: 36px;
+}
+input.btn.btn-warning {
+    background: #fbbd40 !important;
+    border-radius: 3px !important;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    outline: none;
+}
+.google-map {
+    padding: 100px 0px;
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
